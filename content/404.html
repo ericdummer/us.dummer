@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eric Dummer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #05070d;
+      color: #e6eefc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .shrug-image {
+      width: min(260px, 68vw);
+      display: block;
+      filter: drop-shadow(0 0 40px rgba(47, 125, 255, 0.18));
+    }
+
+    .message {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      align-items: center;
+    }
+
+    .label {
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #93a4bd;
+    }
+
+    .heading {
+      font-size: clamp(1.6rem, 5vw, 2.4rem);
+      font-weight: 300;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #e6eefc;
+    }
+
+    .heading span {
+      color: #2f7dff;
+    }
+
+    .home-link {
+      color: #93a4bd;
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .home-link:hover {
+      color: #5aa7ff;
+    }
+  </style>
+</head>
+<body>
+
+  <img class="shrug-image" src="dummer-shrug.png" alt="Eric Dummer shrugging">
+
+  <div class="message">
+    <p class="label">Eric Dummer</p>
+    <p class="heading">Page not found. <span>Sorry.</span></p>
+  </div>
+
+  <a class="home-link" href="/">← Back Home</a>
+
+</body>
+</html>
