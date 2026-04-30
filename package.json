@@ -1,0 +1,7 @@
+{
+  "name": "dummer-us",
+  "private": true,
+  "devDependencies": {
+    "wrangler": "^4.87.0"
+  }
+}
