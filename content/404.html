@@ -13,11 +13,21 @@
       color: #e6eefc;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
       min-height: 100vh;
+      padding: 2rem 1.5rem;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 2rem;
+      gap: 1.5rem;
+    }
+
+    .error-code {
+      font-size: clamp(5rem, 24vw, 11rem);
+      font-weight: 330;
+      letter-spacing: 0.12em;
+      line-height: 0.82;
+      margin-bottom: 0.9rem;
+      color: #e6eefc;
     }
 
     .shrug-image {
@@ -70,11 +80,13 @@
 </head>
 <body>
 
+  <p class="error-code">404</p>
+
   <img class="shrug-image" src="dummer-shrug.png" alt="Eric Dummer shrugging">
 
   <div class="message">
     <p class="label">Eric Dummer</p>
-    <p class="heading">Page not found. <span>Sorry.</span></p>
+    <p class="heading">Page not found. <span>Sorry?</span></p>
   </div>
 
   <a class="home-link" href="/">← Back Home</a>
